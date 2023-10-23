@@ -1,0 +1,22 @@
+{
+  "name": "my-site-webcamp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:3-masato/my-site-webcamp.git",
+  "author": "Masato <144527087+3-masato@users.noreply.github.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "node build.js dev",
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "the-new-css-reset": "^1.11.0"
+  },
+  "devDependencies": {
+    "chokidar": "^3.5.3",
+    "esbuild": "^0.19.5",
+    "esbuild-sass-plugin": "^2.16.0",
+    "sass": "^1.69.4"
+  }
+}

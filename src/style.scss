@@ -1,0 +1,24 @@
+@import "the-new-css-reset/css/reset.css";
+
+:root {
+  --primary-color: #EC715F;
+  --secondary-color: #ECEFF1;
+  --nav-font-color: #FAFAFA;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: var(--primary-color);
+}
+
+main {
+
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: var(--primary-color);
+}
+
