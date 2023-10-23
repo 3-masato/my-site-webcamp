@@ -1,20 +1,17 @@
-@use "./header";
+@use "./styles/header";
+@use "./styles/footer";
+@use "./styles/section";
 
 @import "the-new-css-reset/css/reset.css";
 
 :root {
   --primary-color: #EC715F;
   --secondary-color: #ECEFF1;
-  --nav-font-color: #FAFAFA;
+  --font-color: #FAFAFA;
+
+  --font-famiry: 'Raleway', sans-serif;
 }
 
 main {
 
 }
-
-footer {
-  width: 100%;
-  height: 60px;
-  background-color: var(--primary-color);
-}
-

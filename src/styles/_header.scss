@@ -1,0 +1,34 @@
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+
+  nav {
+    height: 100%;
+  }
+
+  .container {
+    width: 1024px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--font-color);
+  }
+
+  .nav-item {
+    padding: 0 30px;
+  }
+
+  .nav-link {
+
+  }
+}
+
