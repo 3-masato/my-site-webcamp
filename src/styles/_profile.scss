@@ -1,0 +1,42 @@
+@use "./util" as *;
+
+#profile {
+  .container {
+    width: var(--profile-width);
+    @include padding-y(var(--section-padding-y));
+  }
+}
+
+.profile {
+  display: flex;
+
+  &-icon {
+    width: var(--profile-column-width);
+  }
+
+  &-introduction {
+    width: var(--profile-column-width);
+    display: flex;
+    flex-direction: column;
+    gap: var(--profile-section-space);
+    text-align: left;
+  }
+
+  &-icon-image {
+    width: var(--profile-icon-size);
+    height: var(--profile-icon-size);
+    @include margin-x(auto);
+    border-radius: 50%;
+  }
+
+  &-section {
+  }
+
+  &-title {
+    margin-bottom: var(--profile-content-space);
+  }
+
+  &-text {
+
+  }
+}

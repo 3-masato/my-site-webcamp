@@ -1,28 +1,25 @@
 #main-visual {
-  width: 100%;
-  height: 650px;
+}
+
+.main-visual-content {
+  width: var(--main-visual-width);
+  height: var(--main-visual-height);
+  padding-top: var(--main-visual-content-padding-top);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: var(--main-visual-content-gap);
   background-image: url("img/mv.png");
   background-size: cover;
   background-position: center;
-  color: var(--font-color);
-
-  .mv-text {
-    margin-top: 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
 
   h1 {
-    font-size: 64px;
-    font-weight: bold;
+    font-size: var(--main-visual-title-size);
     font-family: var(--font-famiry);
+    color: var(--font-color);
   }
 
   p {
-    font-size: 20px;
+    font-size: var(--main-visual-text-size);
+    color: var(--font-color);
   }
 }

@@ -1,6 +1,6 @@
 header {
-  width: 100%;
-  height: 70px;
+  width: var(--header-width);
+  height: var(--header-height);
   display: flex;
   justify-content: center;
   background-color: var(--primary-color);
@@ -9,8 +9,8 @@ header {
     height: 100%;
   }
 
-  .container {
-    width: 1024px;
+  .header-container {
+    width: var(--header-inside-width);
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -24,7 +24,7 @@ header {
   }
 
   .nav-item {
-    padding: 0 30px;
+    padding: 0 var(--navlink-side-space);
   }
 
   .nav-link {

@@ -1,0 +1,35 @@
+@use "./util" as *;
+
+#feature {
+  .container {
+    width: var(--feature-width);
+    @include padding-y(var(--section-padding-y));
+  }
+}
+
+.strength-group {
+  display: flex;
+  gap: var(--feature-strengths-gap);
+}
+
+.strength {
+  width: var(--feature-strength-width);
+  height: var(--feature-strength-height);
+  display: grid;
+  grid-template: "icon" "title" "text";
+  gap: var(--feature-strengths-gap);
+
+  &-icon {
+    grid-area: icon;
+    font-size: var(--feature-strength-icon-size);
+  }
+
+  &-title {
+    grid-area: title;
+  }
+
+  &-text {
+    grid-area: text;
+    text-align: left;
+  }
+}

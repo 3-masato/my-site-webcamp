@@ -1,24 +1,22 @@
+@use "./util" as *;
+
 #portfolio {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background-color: var(--secondary-color);
-
   .container {
-    width: 920px;
+    width: var(--portfolio-width);
+    @include padding-y(var(--section-padding-y));
   }
+}
 
-  .portfolio-img-group {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 10px;
-  }
+.portfolio-img-group {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--portfolio-images-gap);
+}
 
-  .portfolio-img {
-    width: 300px;
-    height: 250px;
-    object-fit: cover;
-    object-position: center;
-  }
+.portfolio-img {
+  width: var(--portfolio-image-width);
+  height: var(--portfolio-image-height);
+  object-fit: cover;
+  object-position: center;
 }
