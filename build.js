@@ -23,7 +23,8 @@ const config = {
   bundle: true,
   minify: !dev,
   plugins: [sassPlugin()],
-  logLevel: "info"
+  logLevel: "info",
+  external: ["img"]
 };
 
 const ctx = await esbuild.context(config);
