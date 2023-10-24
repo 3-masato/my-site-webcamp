@@ -1,5 +1,17 @@
 #main-visual {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: {
+      image: var(--main-visual-image);
+      size: cover;
+      position: center;
+    };
+  }
 }
+
+
 
 .main-visual-content {
   width: var(--main-visual-width);
@@ -8,13 +20,13 @@
   display: flex;
   flex-direction: column;
   gap: var(--main-visual-content-gap);
-  background-image: url("img/mv.png");
-  background-size: cover;
-  background-position: center;
+
 
   h1 {
-    font-size: var(--main-visual-title-size);
-    font-family: var(--font-famiry);
+    font: {
+      size: var(--main-visual-title-size);
+      family: var(--font-famiry);
+    };
     color: var(--font-color);
   }
 

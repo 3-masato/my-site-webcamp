@@ -1,34 +1,60 @@
+@use "./util" as *;
+
 header {
-  width: var(--header-width);
-  height: var(--header-height);
+  width: 100%;
   display: flex;
   justify-content: center;
   background-color: var(--primary-color);
-
-  nav {
-    height: 100%;
-  }
-
-  .header-container {
-    width: var(--header-inside-width);
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .nav-list {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    color: var(--font-color);
-  }
-
-  .nav-item {
-    padding: 0 var(--navlink-side-space);
-  }
-
-  .nav-link {
-
-  }
 }
 
+.header-container {
+  width: var(--header-width);
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  height: 100%;
+}
+
+.header-nav {
+  height: 100%;
+}
+
+.nav-list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--font-color);
+}
+
+.nav-item {
+  padding: 0 var(--navlink-side-space);
+}
+
+.nav-link {
+
+}
+
+.hamburger-menu-button {
+  display: none;
+}
+
+@include view-mobile {
+  .header-nav {
+    display: none;
+  }
+
+  .hamburger-menu-button {
+    width: var(--header-hamburger-btn-size);
+    height: var(--header-hamburger-btn-size);
+    display: grid;
+    place-items: center;
+    border: solid 1px var(--font-color);
+    font-size: 28px;
+    color: var(--font-color);
+    cursor: pointer;
+  }
+}

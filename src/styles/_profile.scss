@@ -9,6 +9,12 @@
 
 .profile {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: {
+    direction: row;
+    wrap: wrap;
+  };
 
   &-icon {
     width: var(--profile-column-width);
@@ -27,6 +33,7 @@
     height: var(--profile-icon-size);
     @include margin-x(auto);
     border-radius: 50%;
+    aspect-ratio: 1 / 1;
   }
 
   &-section {
@@ -38,5 +45,23 @@
 
   &-text {
 
+  }
+}
+
+@include view-mobile {
+  .profile {
+    flex: {
+      direction: column;
+    };
+
+    &-icon {
+      width: 100%;
+    }
+
+    &-introduction {
+      width: 100%;
+      margin-top: var(--profile-section-space);
+      text-align: center;
+    }
   }
 }

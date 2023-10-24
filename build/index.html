@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>MySite - WebCamp</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico">
     <script src="https://kit.fontawesome.com/0e5135d470.js" crossorigin="anonymous"></script>
   </head>
+
   <body>
     <header>
       <div class="header-container">
@@ -15,7 +17,10 @@
             <img class="logo" src="img/logo.png" alt="site logo" fetchpriority="high" />
           </a>
         </div>
-        <nav>
+        <button class="hamburger-menu-button" type="button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="header-nav">
           <ul class="nav-list">
             <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link" href="#feature">Feature</a></li>
@@ -25,13 +30,17 @@
         </nav>
       </div>
     </header>
+
     <main>
       <section class="section-center" id="main-visual">
-        <div class="main-visual-content">
-          <h1>Lorem Ipsum</h1>
-          <p>simply dummy text of the printing</p>
+        <div class="container">
+          <div class="main-visual-content">
+            <h1>Lorem Ipsum</h1>
+            <p>simply dummy text of the printing</p>
+          </div>
         </div>
       </section>
+
       <section class="section-center section-gray" id="portfolio">
         <article class="container">
           <h2 class="heading">Portfolio</h2>
@@ -40,16 +49,53 @@
             content of a page when looking at its layout.<br>
             The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
           </p>
-          <div class="portfolio-img-group">
-            <img class="portfolio-img" src="img/sketch.jpg" alt="sketch" decoding="async" loading="lazy" />
-            <img class="portfolio-img" src="img/websuku.png" alt="websuku" decoding="async" loading="lazy" />
-            <img class="portfolio-img" src="img/write.jpg" alt="write" decoding="async" loading="lazy" />
-            <img class="portfolio-img" src="img/webcamp.png" alt="webcamp" decoding="async" loading="lazy" />
-            <img class="portfolio-img" src="img/talk.jpg" alt="talk" decoding="async" loading="lazy" />
-            <img class="portfolio-img" src="img/webcamp-mother.png" alt="webcamp-mother" decoding="async" loading="lazy" />
+          <div class="portfolio">
+            <img
+              class="portfolio-img portfolio-sp-none"
+              src="img/sketch.jpg"
+              alt="sketch"
+              decoding="async"
+              loading="lazy"
+            />
+            <img
+              class="portfolio-img"
+              src="img/websuku.png"
+              alt="websuku"
+              decoding="async"
+              loading="lazy"
+            />
+            <img
+              class="portfolio-img portfolio-sp-none"
+              src="img/write.jpg"
+              alt="write"
+              decoding="async"
+              loading="lazy"
+            />
+            <img
+              class="portfolio-img"
+              src="img/webcamp.png"
+              alt="webcamp"
+              decoding="async"
+              loading="lazy"
+            />
+            <img
+              class="portfolio-img portfolio-sp-none"
+              src="img/talk.jpg"
+              alt="talk"
+              decoding="async"
+              loading="lazy"
+            />
+            <img
+              class="portfolio-img"
+              src="img/webcamp-mother.png"
+              alt="webcamp-mother"
+              decoding="async"
+              loading="lazy"
+            />
           </div>
         </article>
       </section>
+
       <section class="section-center" id="feature">
         <article class="container">
           <h2 class="heading">Feature</h2>
@@ -58,18 +104,18 @@
             content of a page when looking at its layout.<br>
             The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
           </p>
-          <div class="strength-group">
-            <section class="strength">
+          <div class="strength">
+            <section class="strength-section">
               <h3 class="strength-title">Strength1</h3>
               <i class="strength-icon fa-solid fa-code"></i>
               <p class="strength-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
             </section>
-            <section class="strength">
+            <section class="strength-section">
               <h3 class="strength-title">Strength2</h3>
               <i class="strength-icon fa-solid fa-desktop"></i>
               <p class="strength-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
             </section>
-            <section class="strength">
+            <section class="strength-section">
               <h3 class="strength-title">Strength3</h3>
               <i class="strength-icon fa-solid fa-gears"></i>
               <p class="strength-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
@@ -77,6 +123,7 @@
           </div>
         </article>
       </section>
+
       <section class="section-center section-gray" id="profile">
         <article class="container">
           <h2 class="heading">Profile</h2>
@@ -102,6 +149,7 @@
           </div>
         </article>
       </section>
+
       <section class="section-center" id="contact">
         <article class="container">
           <h2 class="heading">Contact</h2>
@@ -135,6 +183,7 @@
         </article>
       </section>
     </main>
+
     <footer>
       <div id="copyright">&copy; 2023 WebCamp</div>
     </footer>

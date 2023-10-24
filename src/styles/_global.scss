@@ -1,55 +1,10 @@
+@use "./spec" as *;
 @use "./util" as *;
 
 @import "the-new-css-reset/css/reset.css";
 
 :root {
-  --primary-color: #EC715F;
-  --secondary-color: #ECEFF1;
-  --font-color: #FAFAFA;
-
-  --font-famiry: 'Raleway', sans-serif;
-
-  --header-width: 100%;
-  --header-height: 70px;
-  --header-inside-width: 1024px;
-  --navlink-side-space: 30px;
-
-  --footer-width: 100%;
-  --footer-height: 60px;
-
-  --main-visual-width: 100%;
-  --main-visual-height: 650px;
-  --main-visual-content-padding-top: 200px;
-  --main-visual-content-gap: 10px;
-  --main-visual-title-size: 64px;
-  --main-visual-text-size: 20px;
-
-  --section-padding-y: 90px;
-  --paragraph-margin-y: 30px;
-
-  --portfolio-width: 920px;
-  --portfolio-images-gap: 10px;
-  --portfolio-image-width: 300px;
-  --portfolio-image-height: 250px;
-
-  --feature-width: 980px;
-  --feature-strengths-gap: 10px;
-  --feature-strength-width: 320px;
-  --feature-strength-height: auto;
-  --feature-strength-icon-size: 60px;
-
-  --profile-width: 1024px;
-  --profile-column-width: calc(var(--profile-width) / 2);
-  --profile-icon-size: 250px;
-  --profile-section-space: 20px;
-  --profile-content-space: 5px;
-
-  --contact-width: 800px;
-  --contact-column-width: calc(var(--contact-width) / 2);
-  --profile-section-space: 20px;
-  --profile-content-space: 5px;
-  --profile-sns-icon-gap: 20px;
-  --profile-sns-icon-size: 50px;
+  @include spec;
 }
 
 html {

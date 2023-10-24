@@ -7,16 +7,34 @@
   }
 }
 
-.portfolio-img-group {
-  width: 100%;
+.portfolio {
   display: flex;
-  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex: {
+    direction: row;
+    wrap: wrap;
+  };
   gap: var(--portfolio-images-gap);
+
+  &-img {
+    width: var(--portfolio-image-width);
+    height: var(--portfolio-image-height);
+    object: {
+      fit: cover;
+      position: center;
+    }
+  }
 }
 
-.portfolio-img {
-  width: var(--portfolio-image-width);
-  height: var(--portfolio-image-height);
-  object-fit: cover;
-  object-position: center;
+@include view-mobile {
+  .portfolio {
+    flex: {
+      direction: column;
+    };
+
+    &-sp-none {
+      display: none;
+    }
+  }
 }

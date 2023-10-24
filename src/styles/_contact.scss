@@ -9,16 +9,22 @@
 
 .contact {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: {
+    direction: row;
+    wrap: wrap;
+  };
 
   &-detail {
-    width: var(--profile-column-width);
+    width: var(--contact-column-width);
     display: grid;
-    gap: var(--profile-section-space);
+    gap: var(--contact-section-space);
     justify-content: center;
   }
 
   &-sns {
-    width: var(--profile-column-width);
+    width: var(--contact-column-width);
     display: grid;
     justify-content: center;
   }
@@ -29,7 +35,7 @@
   }
 
   &-title {
-    margin-bottom: var(--profile-content-space);
+    margin-bottom: var(--contact-content-space);
   }
 
   &-anchor {
@@ -43,7 +49,7 @@
   &-sns-list {
     display: flex;
     flex-direction: row;
-    gap: var(--profile-sns-icon-gap);
+    gap: var(--contact-sns-icon-gap);
   }
 
   &-sns-item {
@@ -51,6 +57,22 @@
   }
 
   &-sns-icon {
-    font-size: var(--profile-sns-icon-size);
+    font-size: var(--contact-sns-icon-size);
+  }
+}
+
+@include view-mobile {
+  .contact {
+    flex: {
+      direction: column;
+    };
+
+    &-section {
+      text-align: center;
+    }
+
+    &-sns {
+      margin-top: var(--contact-section-space);
+    }
   }
 }
